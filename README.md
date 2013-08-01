@@ -1,5 +1,7 @@
 # KL_StaticBlock
 
+This is a Magento module which we use for making better use of the standard CMS static blocks. We often lack a really smooth way to get the title from the blocks. This module addresses that and enables us to make text blocks which are easy to administer for our clients.
+
 ## Installation
 
 The easiest way to install the module is by using [modman](https://github.com/karlssonlord/modman):

@@ -32,4 +32,4 @@ If you want another heading level than `<h2>` for the title of the CMS block you
 
 ## License
 
-[GPL v2](http://choosealicense.com/licenses/gpl-v2/)
+[LGPL v2.1](http://choosealicense.com/licenses/lgpl-v2.1/)

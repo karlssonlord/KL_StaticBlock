@@ -1,0 +1,5 @@
+app/etc/modules/*.xml                          app/etc/modules/
+app/code/community/KL/*                        app/code/community/KL/
+app/design/frontend/base/default/template/kl/* app/design/frontend/base/default/template/kl/
+app/locale/en_US/*.csv                         app/locale/en_US/
+app/locale/sv_SE/*.csv                         app/locale/sv_SE/

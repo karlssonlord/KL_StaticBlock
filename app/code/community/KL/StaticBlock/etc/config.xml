@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <KL_StaticBlock>
+            <version>0.0.1</version>
+        </KL_StaticBlock>
+    </modules>
+    <global>
+        <blocks>
+            <staticblock>
+                <class>KL_StaticBlock_Block</class>
+            </staticblock>
+        </blocks>
+        <helpers>
+            <staticblock>
+                <class>KL_StaticBlock_Helper</class>
+            </staticblock>
+        </helpers>
+    </global>
+    <phpunit>
+        <suite>
+            <modules>
+                <KL_StaticBlock />
+            </modules>
+        </suite>
+    </phpunit>
+</config>

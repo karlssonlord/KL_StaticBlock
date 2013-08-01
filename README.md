@@ -26,6 +26,8 @@ In your layout file you can use this either as:
 </block>
 ```
 
+If you want another heading level than `<h2>` for the title of the CMS block you can easily change it from the layout file by adding `<action method="setTitleTag"><title_tag>h3</title_tag></action>` to the block.
+
 ## License
 
 [GPL v2](http://choosealicense.com/licenses/gpl-v2/)

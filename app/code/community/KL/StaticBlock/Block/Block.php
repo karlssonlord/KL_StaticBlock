@@ -50,6 +50,11 @@ class KL_StaticBlock_Block_Block extends Mage_Core_Block_Template
         $this->_storeId = Mage::app()->getStore()->getId();
     }
 
+    /**
+     * Get the title tag for the block
+     *
+     * @return Mage_Cms_Model_Block
+     */
     protected function _getBlock()
     {
         if (!$this->_block) {
@@ -60,6 +65,20 @@ class KL_StaticBlock_Block_Block extends Mage_Core_Block_Template
         }
 
         return $this->_block;
+    }
+
+    /**
+     * Get the title tag for the block
+     *
+     * @return string
+     */
+    public function getTitleTag()
+    {
+        if (!$this->_titleTag) {
+            $this->_titleTag = parent::getTitleTag() ?: 'h2';
+        }
+
+        return $this->_titleTag;
     }
 
     /**

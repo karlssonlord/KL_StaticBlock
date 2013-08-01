@@ -25,5 +25,5 @@
  * @link      https://github.com/karlssonlord/KL_StaticBlock
  */
 ?>
-<?php echo $this->getTitle(); ?>
+<?php printf("<%s>%s</%s>", $this->getTitleTag(), $this->getTitle(), $this->getTitleTag()); ?>
 <?php echo $this->getContent(); ?>

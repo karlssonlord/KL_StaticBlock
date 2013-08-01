@@ -4,7 +4,7 @@ This is a Magento module which we use for making better use of the standard CMS 
 
 ## Installation
 
-The easiest way to install the module is by using [modman](https://github.com/karlssonlord/modman):
+The easiest way to install the module is by using [modman](https://github.com/colinmollenhour/modman):
 
 1. `modman clone git://github.com/karlssonlord/KL_StaticBlock.git`
 2. `modman deploy KL_StaticBlock`

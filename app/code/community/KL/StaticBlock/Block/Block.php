@@ -32,7 +32,7 @@
  * @package  StaticBlock
  * @author   Andreas Karlsson <andreas@karlssonlord.com>
  */
-class KL_StaticBlock_Block_Block extends Mage_Core_Block_Abstract
+class KL_StaticBlock_Block_Block extends Mage_Core_Block_Template
 {
     protected $_storeId;
     protected $_blockId;
@@ -45,12 +45,21 @@ class KL_StaticBlock_Block_Block extends Mage_Core_Block_Abstract
      */
     public function _construct()
     {
-        $this->_storeId = Mage::app()->getStore()->getId();
-        $this->_blockId = $this->getBlockId() ?: $this->getNameInLayout();
+        parent::_construct();
 
-        $this->_block   = Mage::getModel('cms/block')
-            ->setStoreId($this->_storeId)
-            ->load($this->_blockId);
+        $this->_storeId = Mage::app()->getStore()->getId();
+    }
+
+    protected function _getBlock()
+    {
+        if (!$this->_block) {
+            $this->_blockId = $this->getBlockId() ?: $this->getNameInLayout();
+            $this->_block   = Mage::getModel('cms/block')
+                ->setStoreId($this->_storeId)
+                ->load($this->_blockId);
+        }
+
+        return $this->_block;
     }
 
     /**
@@ -60,7 +69,7 @@ class KL_StaticBlock_Block_Block extends Mage_Core_Block_Abstract
      */
     public function getTitle()
     {
-        return $this->_block->getTitle();
+        return $this->_getBlock()->getTitle();
     }
 
     /**
@@ -71,7 +80,7 @@ class KL_StaticBlock_Block_Block extends Mage_Core_Block_Abstract
     public function getContent()
     {
         $processor  = Mage::helper('cms')->getBlockTemplateProcessor();
-        $rawContent = $this->_block->getContent();
+        $rawContent = $this->_getBlock()->getContent();
         $content    = $processor->filter($rawContent);
 
         return $content;

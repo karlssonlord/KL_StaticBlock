@@ -21,7 +21,7 @@
  * @package   StaticBlock
  * @author    Andreas Karlsson <andreas@karlssonlord.com>
  * @copyright 2013 Karlsson & Lord AB
- * @license   GPL v2 http://choosealicense.com/licenses/gpl-v2/
+ * @license   LGPL v2.1 http://choosealicense.com/licenses/lgpl-v2.1/
  * @link      https://github.com/karlssonlord/KL_StaticBlock
  */
 

@@ -28,9 +28,9 @@
 /**
  * General helper
  *
- * @category  KL
- * @package   StaticBlock
- * @author    Andreas Karlsson <andreas@karlssonlord.com>
+ * @category KL
+ * @package  StaticBlock
+ * @author   Andreas Karlsson <andreas@karlssonlord.com>
  */
 class KL_StaticBlock_Helper_Data extends Mage_Core_Helper_Abstract
 {

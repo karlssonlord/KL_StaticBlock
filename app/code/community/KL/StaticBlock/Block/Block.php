@@ -28,9 +28,9 @@
 /**
  * The Static Block block
  *
- * @category  KL
- * @package   StaticBlock
- * @author    Andreas Karlsson <andreas@karlssonlord.com>
+ * @category KL
+ * @package  StaticBlock
+ * @author   Andreas Karlsson <andreas@karlssonlord.com>
  */
 class KL_StaticBlock_Block_Block extends Mage_Core_Block_Abstract
 {

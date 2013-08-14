@@ -24,6 +24,8 @@
  * @license   LGPL v2.1 http://choosealicense.com/licenses/lgpl-v2.1/
  * @link      https://github.com/karlssonlord/KL_StaticBlock
  */
-?>
-<?php printf("<%s>%s</%s>", $this->getTitleTag(), $this->getTitle(), $this->getTitleTag()); ?>
-<?php echo $this->getContent(); ?>
+
+if($this->getContent() !== null) : ?>
+    <?php printf("<%s>%s</%s>", $this->getTitleTag(), $this->getTitle(), $this->getTitleTag()); ?>
+    <?php echo $this->getContent(); ?>
+<?php endif; ?>

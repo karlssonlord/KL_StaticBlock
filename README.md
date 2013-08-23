@@ -13,7 +13,7 @@ The easiest way to install the module is by using [modman](https://github.com/co
 
 In your layout file you can use this either as:
 
-```
+```xml
 <block type="staticblock/block" name="identifier-of-your-cms-static-block">
     <action method="setTemplate"><template>kl/staticblock/block.phtml</template></action>
 </block>
@@ -21,7 +21,7 @@ In your layout file you can use this either as:
 
 ... or:
 
-```
+```xml
 <block type="staticblock/block" name="name-of-your-choosing">
     <action method="setTemplate"><template>kl/staticblock/block.phtml</template></action>
     <action method="setBlockId"><template>identifier-of-your-cms-static-block</template></action>
